@@ -1,0 +1,9 @@
+.row {
+  max-height: 70px;
+  font-weight: 500;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 0;
+  background-color: #e7eaf5;
+}

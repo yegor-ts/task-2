@@ -1,38 +1,76 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.icon-wrapper {
+  padding: 8px;
+  border: none;
+  border-radius: 50%;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background-color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.icon {
+  cursor: auto;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  font-size: 0;
+  width: 40px;
+  height: 40px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.icon:not(:last-child) {
+  margin: 0 5px 0 0;
+}
+
+.icon--is-big {
+  width: 40px;
+  height: 40px;
+}
+
+.icon--archive-white {
+  cursor: pointer;
+  background-image: url('./assets/archive-box.svg');
+}
+
+.icon--delete-white {
+  background-image: url('./assets/delete-bin.svg');
+}
+
+.icon--archive {
+  cursor: pointer;
+  background-image: url('./assets/archive-box.svg');
+}
+
+.icon--unarchive {
+  cursor: pointer;
+  background-image: url('./assets/unarchive.svg');
+}
+
+.icon--delete {
+  cursor: pointer;
+  background-image: url('./assets/delete-bin.svg');
+}
+
+.icon--edit {
+  cursor: pointer;
+  background-image: url('./assets/pen.svg');
+}
+
+.icon--task {
+  background-image: url('./assets/cart.svg');
+}
+
+.icon--idea {
+  background-image: url('./assets/idea.svg');
+}
+
+.icon--random.thought {
+  background-image: url('./assets/human-head.svg');
+}
+
+.icon--quote {
+  background-image: url('./assets/quote.svg');
 }

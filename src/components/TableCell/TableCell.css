@@ -1,0 +1,49 @@
+.cell {
+  font-weight: 700;
+  padding: 10px;
+  width: 200px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.cell__title,
+.cell__text {
+  font-size: 16px;
+  display: inline-block;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 95%;
+}
+
+.cell--full-size {
+  overflow: visible;
+}
+
+.cell--full-size .cell__title {
+  overflow: visible;
+}
+
+.cell--is-centered {
+  justify-content: center;
+}
+
+.cell--with-icons {
+  min-width: 100px;
+  width: max-content;
+  justify-content: flex-end;
+}
+
+.cell--is-darken {
+  color: #333;
+}
+
+.cell--is-big {
+  width: 210px;
+}
+
+.cell__icon-wrapper {
+  margin: 0 15px 0 0;
+}
