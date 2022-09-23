@@ -1,0 +1,39 @@
+.container {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #999999;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.container__mask {
+  position: absolute;
+  top: -8px;
+  bottom: -8px;
+  left: -8px;
+  right: -8px;
+  overflow: hidden;
+  background-color: #444 68;
+  z-index: 0;
+}
+
+.container__content {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 10px;
+}
+
+.container__create-button {
+  align-self: flex-end;
+  padding: 5px 10px;
+  background-color: #eee;
+  border: 1px solid #888;
+  border-radius: 5px;
+  transition: all 0.4s linear;
+  margin: 10px 10px 10px;
+}
+
+.container__create-button:hover {
+  color: #eee;
+  background-color: #444;
+}

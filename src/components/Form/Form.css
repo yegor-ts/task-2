@@ -1,0 +1,127 @@
+.form {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 1;
+  transform: translate(-50%, -50%);
+  padding: 50px 30px 40px;
+  background-color: #d9d6cc;
+  border: 1px solid #888;
+  border-radius: 10px;
+  display: none;
+  flex-direction: column;
+  color: black;
+}
+
+.form--is-visible {
+  display: flex;
+}
+
+.form__cancel-button {
+  cursor: pointer;
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  right: 30px;
+  top: 20px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url('../../assets/close.svg');
+  transform-origin: center;
+  transition: transform 0.3s linear;
+}
+
+.form__cancel-button:hover {
+  transform: rotate(90deg);
+}
+
+.form__error-message {
+  box-sizing: border-box;
+  font-size: 18px;
+  color: #e64432 cc;
+  font-weight: 700;
+  position: absolute;
+  bottom: -15px;
+  right: 30px;
+  transition: all 0.3s;
+}
+
+.form__title {
+  font-size: 26px;
+  margin: 0 0 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.form__label {
+  margin: 0 0 25px;
+}
+
+.form__input {
+  box-sizing: border-box;
+  font-size: inherit;
+  font-family: inherit;
+  color: #888;
+  border: 1px solid #999999;
+  border-radius: 10px;
+  outline: none;
+  border-bottom: 1px solid #888;
+  width: 280px;
+  padding: 10px 0;
+  height: 40px;
+}
+
+.form__input--select {
+  border: 1px solid #888;
+}
+
+.form__input--textarea {
+  resize: none;
+  overflow-y: hidden;
+}
+
+.form__button-block {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.form__button {
+  cursor: pointer;
+  line-height: 1;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: inherit;
+  width: 100px;
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  border: 1px solid #888;
+  border-radius: 8px;
+  transition: all 0.3s linear;
+}
+
+.form__button:first-child {
+  margin: 0 15px 0 0;
+}
+
+.form__button:hover {
+  color: #999999;
+}
+
+.form__button--reset:hover {
+  border-color: #e64938 eb;
+  background-color: #e64938 cc;
+}
+
+.form__button--submit:hover {
+  border-color: #43b12f f0;
+  background-color: #43b12f e1;
+}
